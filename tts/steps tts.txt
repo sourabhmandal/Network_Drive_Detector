@@ -1,0 +1,13 @@
+Text to speech conversion
+
+Application outputs text that is input to a speech engine. The speech engine converts the text
+into voice and announces/plays it.
+
+Steps for speech synthesis
+1) Search for the available speech engines.
+2) Select and create (instantiate) some speech engine
+3) Allocate resources for it.
+4) By default the speech engine is in paused state so resume it.
+5) Send text to it, get the announcements done.
+
+

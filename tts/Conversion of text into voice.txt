@@ -1,0 +1,29 @@
+The major steps in producing speech from text are as follows:
+
+Structure analysis
+--------------------------
+Process the input text to determine where paragraphs, sentences and other structures start and end. For most languages, punctuation and formatting data are used in this stage.
+
+
+Text pre-processing 
+----------------------------
+Analyze the input text for special constructs of the language. In English, special treatment is required for abbreviations, acronyms, dates, times, numbers, currency amounts, email addresses and many other forms. Other languages need special processing for these forms and most languages have other specialized requirements.
+The result of these first two steps is a spoken form of the written text. The following are examples of the difference between written and spoken text.
+St. Mathews hospital is on Main St.
+-> "Saint Mathews hospital is on Main street"
+Add $20 to account 55374.
+-> "Add twenty dollars to account five five, three seven four."
+
+
+Text-to-phoneme Conversion
+-------------------------------
+Convert each word to phonemes. A phoneme is a basic unit of sound in a language. US English has around 45 phonemes including the consonant and vowel sounds. For example, "times" is spoken as four phonemes "t ay m s". 
+
+Prosody Analysis
+----------------------
+Process the sentence structure, words and phonemes to determine appropriate prosody for the sentence. Prosody includes many of the features of speech other than the sounds of the words being spoken. This includes the pitch (or melody), the timing (or rhythm), the pausing, the speaking rate, the emphasis on words and many other features. Correct prosody is important for making speech sound right and for correctly conveying the meaning of a sentence.
+
+
+Waveform production 
+------------------------
+Finally, the phonemes and prosody information are used to produce the audio waveform for each sentence. There are many ways in which the speech can be produced from the phoneme and prosody information. Most current systems do it in one of two ways: concatenation of chunks of recorded human speech, or formant synthesis using signal processing techniques based on knowledge of how phonemes sound and how prosody affects those phonemes. The details of waveform generation are not typically important to application developers.
